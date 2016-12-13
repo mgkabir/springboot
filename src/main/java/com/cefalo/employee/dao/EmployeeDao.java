@@ -8,6 +8,8 @@ import org.springframework.stereotype.Repository;
 
 import com.cefalo.employee.entity.Employee;
 
+
+
 @Repository
 public class EmployeeDao {
 	
@@ -27,5 +29,7 @@ public class EmployeeDao {
 		return this.employees.values();
 	}
 
+	public Employee getEmployee(int Id){
+		return this.employees.get(Id);
+	}
 }
-
